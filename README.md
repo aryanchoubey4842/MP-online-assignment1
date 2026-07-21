@@ -1,1 +1,41 @@
 # MP-online-assignment1
+
+Medical Insurance Cost Prediction using Multiple Linear Regression
+Author: Aryan Choubey
+
+Registration Number: 23MIM10173
+
+Application Number: IN26011810
+
+Batch Number: 1A
+
+Email ID: aryan.23mim10173@vitbhopal.ac.in
+
+Objective
+The objective of this project is to develop a Multiple Linear Regression model to estimate medical insurance charges based on individual health and personal features.
+
+Dataset Link
+Kaggle: Medical Cost Personal Insurance Dataset
+Libraries Used
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+kaggle
+Methodology
+Data Understanding: Loaded the dataset, identified numerical/categorical variables, and inspected target values.
+Data Preprocessing: Verified missing values and encoded categorical features (sex, smoker, region) using one-hot encoding (drop_first=True).
+Data Splitting: Split the data into 80% training set and 20% testing set using train_test_split.
+Model Development: Fitted a LinearRegression model from scikit-learn using all features.
+Model Evaluation: Evaluated using Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score, alongside an actual vs. predicted scatter plot.
+Results
+R² Score: ~0.78
+Primary Cost Drivers: Smoking status, age, and BMI.
+Conclusion
+Multiple Linear Regression effectively captures general trends in insurance charges (
+R
+2
+≈
+0.78
+). However, its main limitation is the inability to model complex non-linear feature interactions (e.g., compound risk of high BMI combined with smoking). Future work could leverage non-linear ensemble models like Random Forest or XGBoost.
